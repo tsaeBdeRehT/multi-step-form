@@ -1,0 +1,28 @@
+.form-plan {
+    width: 8rem;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.form-plan__img {
+    margin-bottom: 2rem;
+}
+
+.form-plan__header {
+    margin-bottom: 0.5rem;
+}
+
+.form-plan__price {
+    color: hsl(231, 11%, 63%);
+    margin-bottom: 1rem;
+}
+
+.form-plan__sale {
+    font-family: UbuntuMedium,sans-serif;
+    color: hsl(213, 96%, 18%);
+}
+
+.active-plan {
+    border: 2px solid hsl(243, 100%, 62%);
+}
