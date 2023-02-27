@@ -8,20 +8,32 @@
     background: none;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: hsl(231, 11%, 63%);
+    text-decoration: none;
 }
 
 .form-footer__next {
     font-family: UbuntuMedium, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 2.5rem;
     width: 7rem;
     border: none;
     border-radius: 0.6rem;
     background: hsl(213, 96%, 18%);
-    color: aliceblue;
     cursor: pointer;
+    color: aliceblue;
+    text-decoration: none;
 }
 
 .hidden {
     visibility: hidden;
+}
+
+.confirm {
+    background-color: hsl(243, 100%, 62%)
 }

@@ -27,6 +27,7 @@ const Form = ({onNextClick, onBackClick, currentStep,
                 {/*    currentPlan = {currentPlan}*/}
                 {/*    onBillingTypeChange = {onBillingTypeChange}*/}
                 {/*/>*/}
+                <ThirdStep/>
             </div>
 
             <FormFooter

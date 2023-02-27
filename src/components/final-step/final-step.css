@@ -1,0 +1,49 @@
+.bill {
+    padding: 3rem;
+}
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid hsl(229, 24%, 87%);
+}
+
+.position__name, .plan-price {
+    font-family: UbuntuBold, sans-serif;
+    color: hsl(213, 96%, 18%);
+    margin-bottom: .5rem;
+}
+
+.change-link {
+    color: hsl(231, 11%, 63%);
+}
+
+.add-ons {
+    margin-top: 2rem;
+}
+
+.add-ons__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.add-ons__title, .total__title {
+    color: hsl(231, 11%, 63%);
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.total__price {
+    font-family: UbuntuBold, sans-serif;
+    font-size: 1.5rem;
+    color: hsl(243, 100%, 62%);
+}
+
+

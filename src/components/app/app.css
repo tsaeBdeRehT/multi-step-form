@@ -27,3 +27,29 @@
     font-style: normal;
     font-weight: normal;
 }
+
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 50%;
+}
+
+.form-title {
+    margin-bottom: 1rem;
+}
+
+.form__header {
+    font-family: UbuntuBold, sans-serif;
+    color: hsl(213, 96%, 18%);
+}
+
+.form__description {
+    display: block;
+    color: hsl(231, 11%, 63%);
+}
+
+.hide {
+    display: none;
+}

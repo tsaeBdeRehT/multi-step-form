@@ -1,23 +1,24 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 import './form-footer.css';
 
-const FormFooter = ({onNextClick, onBackClick, currentStep}) => {
-    const hidden = currentStep === 1 ? 'hidden' : ''
+const FormFooter = ({onNextClick, onBackClick, nextLink, backLink, visible, leftText = 'Next Step'}) => {
+    const confirm = leftText === "Next Step" ? '' : ' confirm';
+
     return (
         <div className='form-footer'>
-            <button
-                className={'form-footer__back ' + hidden}
+            <Link to={backLink}
+                className={'form-footer__back ' + visible}
                 onClick={onBackClick}
             >
                 Go Back
-            </button>
-            <button
-                className='form-footer__next'
+            </Link>
+            <Link to={nextLink}
+                className={'form-footer__next' + confirm}
                 onClick={onNextClick}
             >
-                Next Step
-            </button>
+                {leftText}
+            </Link>
         </div>
     );
 }

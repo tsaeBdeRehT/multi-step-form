@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './stepper.css';
+import {useLocation} from "react-router-dom";
 
-const Stepper = ({stepperData, currentStep}) => {
+const Stepper = ({stepperData}) => {
+    const location = useLocation();
+    let currentStep = location.pathname[location.pathname.length - 1];
+
     const elements = stepperData.map(({number, title}) => {
-        const active = number == currentStep ? 'active' : '';
+        const active = number === currentStep ? 'active' : '';
 
         return (
             <li className='stepper-list__item' key={number}>
