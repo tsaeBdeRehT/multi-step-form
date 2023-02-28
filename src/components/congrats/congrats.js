@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
+import {Link, useBeforeUnload, useNavigate} from "react-router-dom";
 import image from '../../assets/images/icon-thank-you.svg';
-import './congrats.css'
+import './congrats.css';
+
+
 const Congrats = () => {
+
     return (
         <div className='thank-you'>
             <img src={image}/>

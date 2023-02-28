@@ -1,22 +1,23 @@
-import React, {useEffect} from "react";
+import React from "react";
+import {Link} from "react-router-dom";
 import './stepper.css';
 import {useLocation} from "react-router-dom";
 
 const Stepper = ({stepperData}) => {
-    const location = useLocation();
-    let currentStep = location.pathname[location.pathname.length - 1];
+    const paths = ['/', '/step2', '/step3', '/step4'];
+    const currentStep = paths.indexOf(useLocation().pathname) + 1;
 
     const elements = stepperData.map(({number, title}) => {
-        const active = number === currentStep ? 'active' : '';
+        const active = number == currentStep ? 'active' : '';
 
         return (
-            <li className='stepper-list__item' key={number}>
+            <Link to={paths[number-1]} className='stepper-list__item' key={number}>
                 <div className={'stepper-list__item-number ' + active}>{number}</div>
                 <div className='stepper-list__item-content desktop'>
                     <div className='stepper-list__item-step'>STEP {number}</div>
                     <div className='stepper-list__item-title'>{title}</div>
                 </div>
-            </li>
+            </Link>
         );
     });
 

@@ -60,7 +60,7 @@ const SecondStep = ({planInfo, isMonthly, currentPlan, onPlanChange, onBillingTy
 
             <FormFooter
                 nextLink = '/step3'
-                backLink = '/step1'
+                backLink = '/'
             />
 
         </div>

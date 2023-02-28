@@ -86,6 +86,8 @@ export default class App extends Component {
         ]
     };
 
+
+
     onBillingTypeChange = () => {
         this.setState(({isMonthly}) => {
             return {
@@ -140,7 +142,7 @@ export default class App extends Component {
                     />
 
                     <Routes>
-                        <Route path='/step1' element={<FirstStep/>}/>
+                        <Route path='/' element={<FirstStep/>} exact/>
                         <Route path='/step2' element={ <SecondStep
                             planInfo = {planInfo}
                             isMonthly = {isMonthly}

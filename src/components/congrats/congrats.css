@@ -11,3 +11,13 @@
 .text {
     color: hsl(231, 11%, 63%);
 }
+
+@media (max-width: 770px) {
+    .thank-you {
+        width: auto;
+        margin-top: 0;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+}
