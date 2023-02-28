@@ -6,6 +6,7 @@ import FirstStep from "../first-step/first-step";
 import SecondStep from "../second-step/second-step";
 import ThirdStep from "../third-step/third-step";
 import FinalStep from "../final-step/final-step";
+import Congrats from "../congrats/congrats";
 
 import arcade from '../../assets/images/icon-arcade.svg';
 import advanced from '../../assets/images/icon-advanced.svg';
@@ -25,27 +26,19 @@ export default class App extends Component {
         stepsInfo: [
             {
                 number: '1',
-                title: 'YOUR INFO',
-                header: 'Personal info',
-                description: 'Please provide your name, email address, and phone number.'
+                title: 'YOUR INFO'
             },
             {
                 number: '2',
-                title: 'SELECT PLAN',
-                header: 'Select your plan',
-                description: 'You have the option of monthly or yearly billing.'
+                title: 'SELECT PLAN'
             },
             {
                 number: '3',
                 title: 'ADD-ONS',
-                header: 'Pick add-ons',
-                description: 'Add-ons help enhance your gaming experience.'
             },
             {
                 number: '4',
-                title: 'SUMMARY',
-                header: 'Finishing up',
-                description: 'Double-check everything looks OK before confirming.'
+                title: 'SUMMARY'
             },
         ],
         planInfo: [
@@ -165,6 +158,7 @@ export default class App extends Component {
                             isMonthly = {isMonthly}
                             plan = {planInfo[plan]}
                         />} />
+                        <Route path='/final' element={<Congrats/>}/>
                     </Routes>
                 </Router>
             </div>

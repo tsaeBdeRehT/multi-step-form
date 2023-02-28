@@ -12,7 +12,7 @@ const Stepper = ({stepperData}) => {
         return (
             <li className='stepper-list__item' key={number}>
                 <div className={'stepper-list__item-number ' + active}>{number}</div>
-                <div className='stepper-list__item-content'>
+                <div className='stepper-list__item-content desktop'>
                     <div className='stepper-list__item-step'>STEP {number}</div>
                     <div className='stepper-list__item-title'>{title}</div>
                 </div>

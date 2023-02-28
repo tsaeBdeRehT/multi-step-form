@@ -40,3 +40,40 @@
     color: hsl(243, 100%, 62%);
     background: hsl(206, 94%, 87%);
 }
+
+@media (max-width: 1440px){
+
+}
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 770px) {
+    .stepper {
+        background: none;
+        border-radius: 0;
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+
+    .stepper-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stepper-list__item {
+        padding: .5rem;
+        margin-bottom: 0;
+    }
+
+    .stepper-list__item-number {
+        margin-right: 0;
+    }
+
+
+    .desktop {
+        display: none;
+    }
+}
